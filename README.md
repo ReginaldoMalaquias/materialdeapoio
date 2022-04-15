@@ -10,3 +10,16 @@ https://docs.oracle.com/pt-br/iaas/Content/FreeTier/freetier_topic-Always_Free_R
 
 Compute
 Todas as tenancies têm um conjunto de recursos Always Free no serviço Compute para criar instâncias de máquina virtual (VM) de computação. Você deve criar as instâncias de computação Always Free em sua região home.
+
+
+O Fluxograma na Vida de um Programador // Vlog #27
+https://www.youtube.com/watch?v=i74ueEU6zIE
+
+
+drawio
+
+
+
+Elaboração de Fluxogramas de Processos
+https://www.youtube.com/watch?v=k7AgUN0SYDk
+
