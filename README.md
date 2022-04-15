@@ -23,3 +23,8 @@ drawio
 Elaboração de Fluxogramas de Processos
 https://www.youtube.com/watch?v=k7AgUN0SYDk
 
+
+
+Criando contribuição open-source no Github do zero! | Diego Fernandes
+
+https://www.youtube.com/watch?v=mcd7lqpUzIA
