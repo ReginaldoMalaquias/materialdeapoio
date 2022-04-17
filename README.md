@@ -28,3 +28,13 @@ https://www.youtube.com/watch?v=k7AgUN0SYDk
 Criando contribuição open-source no Github do zero! | Diego Fernandes
 
 https://www.youtube.com/watch?v=mcd7lqpUzIA
+
+Armazenamento na nuvem
+https://www.youtube.com/watch?v=S9hDjLw7G8I
+
+
+Google Cloud: Controlando Custos de Rede
+https://www.youtube.com/watch?v=xH86IsUOjiY
+
+
+
