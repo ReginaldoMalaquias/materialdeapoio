@@ -38,3 +38,23 @@ https://www.youtube.com/watch?v=xH86IsUOjiY
 
 
 
+Brasileiro vira notícia com suas habilidades em CSS e Design
+https://www.youtube.com/watch?v=xx01-s_Q-mU
+
+Isometric Cards - Pure CSS3
+https://www.youtube.com/watch?v=YqHSUueLucY
+
+
+
+Como perder um patrocínio em 2 minutos! Sikêra Jr ao vivo.
+https://www.youtube.com/watch?v=LLz38nbmw-Y
+
+
+
+Porque Eu Virei Um Problema Para os Meus Projetos Open Source
+
+https://www.youtube.com/watch?v=amdnXhAaA1M
+
+https://github.com/BrasilAPI/cep-promise
+
+
