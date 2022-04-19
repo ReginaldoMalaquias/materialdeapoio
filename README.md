@@ -58,3 +58,48 @@ https://www.youtube.com/watch?v=amdnXhAaA1M
 https://github.com/BrasilAPI/cep-promise
 
 
+Ambientes Back-End com Docker + VS Code // Mão no Código #3
+https://www.youtube.com/watch?v=97jWpWp4Pnc
+
+
+index.php
+=================================================================
+<?php phpinfo(); ?>
+
+
+
+docker-compose.yml
+=================================================================
+php:
+  build: .
+  ports:
+   - "80:80"
+   - "443:443"
+   volumes:
+    - ./www:/var/www/html
+   links:
+    - db 
+
+db:
+  image: mysql:5.7
+  volumes:
+    - /var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=myrootpass
+    - MYSQL_DATABASE=mydb
+
+
+Dockerfile
+=================================================================
+FROM php:7.2-apache
+RUN docker-php-ext-install mysqli
+RUN a2enmod rewrite
+
+
+
+
+
+
+
+
+
