@@ -104,6 +104,7 @@ RUN a2enmod rewrite
 =========================================================================
 Docker + VS Code #CDFTV #MaoNoCodigo3
 docker-compose-wordpress.yml
+===================================================================================================
 version: '3.3'
 
 services:
@@ -150,9 +151,9 @@ volumes:
     
     
     
-    ===================================================================================================
-    
+===================================================================================================
     docker-compose.yml
+===================================================================================================
 php:
   build: .
   ports:
@@ -192,8 +193,8 @@ db:
 
 
 ===================================================================================================
-
 Dockerfile
+===================================================================================================
 FROM php:7.2-apache
 RUN docker-php-ext-install mysqli
 RUN a2enmod rewrite
@@ -225,6 +226,7 @@ RUN a2enmod rewrite
 Olá Gabriel! Primeiramente, agradeço a vocês pelo vídeo, foi uma ótima dica demostrar a integração do VSCode com o Docker. Parabéns!
 
 Eu estive testando o docker, o segundo docker-compose (docker-compose.yml) e vi que está faltando a linha service. Por isso, para funcionar no meu ambiente de teste, tive que adicionar as linhas version e service no início do arquivo.
+===================================================================================================
 
 version: '3.3'
 
