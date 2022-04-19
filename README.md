@@ -101,5 +101,189 @@ RUN a2enmod rewrite
 
 
 
+=========================================================================
+Docker + VS Code #CDFTV #MaoNoCodigo3
+docker-compose-wordpress.yml
+version: '3.3'
+
+services:
+   wordpress_db:
+     image: mysql:5.7
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: myrootpass
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+
+   wordpress:
+     depends_on:
+       - wordpress_db
+     image: wordpress:latest
+     ports:
+       - "80:80"
+       - "443:443"
+     restart: always
+     environment:
+       WORDPRESS_DB_HOST: wordpress_db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: wordpress
+
+   phpmyadmin:
+    depends_on:
+      - wordpress_db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 88:80
+    environment:
+      PMA_HOST: wordpress_db:3306
+      MYSQL_ROOT_PASSWORD: myrootpass
+
+volumes:
+    db_data:
+    
+    
+    
+    
+    
+    
+    ===================================================================================================
+    
+    docker-compose.yml
+php:
+  build: .
+  ports:
+   - "80:80"
+   - "443:443"
+  volumes:
+   - ./www/:/var/www/html
+  links:
+   - db
+
+db:
+  image: mysql:5.7
+  volumes:
+   - /var/lib/mysql
+  environment:
+   - MYSQL_ROOT_PASSWORD=myrootpass
+   - MYSQL_DATABASE=mydatabase
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
+
+
+
+
+===================================================================================================
+
+Dockerfile
+FROM php:7.2-apache
+RUN docker-php-ext-install mysqli
+RUN a2enmod rewrite
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================================================================
+Olá Gabriel! Primeiramente, agradeço a vocês pelo vídeo, foi uma ótima dica demostrar a integração do VSCode com o Docker. Parabéns!
+
+Eu estive testando o docker, o segundo docker-compose (docker-compose.yml) e vi que está faltando a linha service. Por isso, para funcionar no meu ambiente de teste, tive que adicionar as linhas version e service no início do arquivo.
+
+version: '3.3'
+
+services:
+  php:
+    build: .
+    ports:
+    - "80:80"
+    - "443:443"
+    volumes:
+    - ./www/:/var/www/html
+    links:
+    - db
+
+  db:
+    image: mysql:5.7
+    volumes:
+    - /var/lib/mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=myrootpass
+    - MYSQL_DATABASE=mydatabase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================================================================
