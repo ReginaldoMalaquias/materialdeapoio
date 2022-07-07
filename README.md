@@ -254,11 +254,12 @@ services:
 
 
 
-========================
+=======
 Como fazer um SITE RÁPIDO com GITHUB PAGES? | Handshake #4 - 07/07/2022 19:55hrs - Itaigara
-========================
+=======
 https://www.youtube.com/watch?v=5B4bHSiOOO8
 
+![image](https://user-images.githubusercontent.com/75837512/177885044-01eb1641-1bc4-4d35-b9d9-ae861e87365f.png)
 
 
 
@@ -290,4 +291,4 @@ https://www.youtube.com/watch?v=5B4bHSiOOO8
 
 
 
-===================================================================================================
+
